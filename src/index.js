@@ -2,10 +2,16 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import CounterWithDocumentTitleUpdate from "./CounterWithDocumentTitleUpdate";
 import FriendStatus from "./FriendStatus";
-
+import CounterWithReducer from "./CounterWithReducer";
 class App extends Component {
   render() {
-    return <FriendStatus friendId="21" />;
+    return (
+      <React.Fragment>
+        {/* <CounterWithDocumentTitleUpdate />
+        <FriendStatus friendId="21" /> */}
+        <CounterWithReducer />
+      </React.Fragment>
+    );
   }
 }
 
